@@ -1,10 +1,16 @@
+<!-- TODO: write documentation for home assistant -->
+
 # Home Assistant Add-on: Example add-on
 
 ## How to use
 
-This add-on really does nothing. It is just an example.
+This is the Home Assistant [Donetick](https://github.com/donetick/donetick/tree/main) addon.
 
-When started it will print the configured message or "Hello world" in the log.
+## Configuration
 
-It will also print "All done!" in `/share/example_addon_output.txt` to show
-simple example of the usage of `map` in addon config.
+ | Option | Default | Explanation
+ |--------|---------|------------
+ | jwt_secret | change_this_to_a_secure_random_string | secret needed by donetick backend
+ | telegram_token |  | optional token for telegram integration
+ | pushover_token |  | optional token for pushover integration
+ | disable_signup | false | If true, disables user signups.
